@@ -1,0 +1,257 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<title>Shoes Shop</title>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+    <link href="http://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link href="http://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  	<link href="http://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    
+	<style>
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+    footer {
+      	background-color: #000000;
+      	padding: 10px;
+	}
+	.carousel-inner > .item > img,
+  	.carousel-inner > .item > a > img {
+      	width: 70%;
+      	margin: auto;
+  	}
+	.carousel-inner img {
+      	width: 100%; 
+      	margin: auto;
+      	min-height:200px;
+	}
+	.bg-1 { 
+    	background-color: #CCC;
+    	color: #000;
+	}
+	.bg-1 { 
+    	background-color: #333;
+    	color: #FFF;
+	}
+	button,
+	html input[type="button"],
+	input[type="reset"],
+	input[type="submit"] {
+  		-webkit-appearance: button;
+  		cursor: pointer;
+	}
+	button[disabled],
+	html input[disabled] {
+  		cursor: default;
+	}
+	button::-moz-focus-inner,
+	input::-moz-focus-inner {
+  		padding: 0;
+  		border: 0;
+	}
+	input {
+  		line-height: normal;
+	}
+	input[type="checkbox"],
+	input[type="radio"] {
+  		box-sizing: border-box;
+  		padding: 0;
+	}
+	input[type="number"]::-webkit-inner-spin-button,
+	input[type="number"]::-webkit-outer-spin-button {
+  		height: auto;
+	}
+	input[type="search"] {
+  		-webkit-box-sizing: content-box;
+     	-moz-box-sizing: content-box;
+          	box-sizing: content-box;
+  		-webkit-appearance: textfield;
+	}
+	input[type="search"]::-webkit-search-cancel-button,
+	input[type="search"]::-webkit-search-decoration {
+  		-webkit-appearance: none;
+	}
+	.search-box {
+  		text-align: right;
+  		margin-top: 15px;
+  		position: relative;
+	}
+	.search-box input {
+  		margin-top: 0px;
+	}
+	.search-box input[type="submit"] {
+  		background-color: transparent;
+  		position: absolute;
+  		right: 0;
+  		top: 0;
+  		border: 0;
+  		content: '';
+  		color: transparent;
+  		background: url(../images/search-icon.png);
+  		background-position: center;
+  		background-repeat: no-repeat;
+	}
+	.search-box input#s {
+  		padding: 4px 10px 4px 10px;
+  		height: 34px;
+  		line-height: 34px;
+  		outline: 0;
+  		border: 1px solid #ddd;
+	}
+	@media (max-width: 600px) {
+    	.carousel-caption {
+      		display: none; 
+    	}
+	}
+  </style>
+</head>
+
+<body>
+	<nav class="navbar navbar-inverse">
+    	<div class="container-fluid">
+            <div class="col-md-3">
+            	<div class="navbar-header">
+        			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            			<span class="icon-bar"></span>
+                		<span class="icon-bar"></span>
+                		<span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+					</button>
+            		<a href='index.html'><img src="img/logo.png" alt="logo"></a> &nbsp; &nbsp;
+				</div>
+            </div>
+            <div class="col-md-5">
+            	<div class="collapse navbar-collapse" id="myNavbar">
+      				<ul class="nav navbar-nav">
+        				<li class="active"><a href="index.html">Home</a></li>
+                    	<li class="dropdown">
+                    		<a href="#" class="dropdown-toggle" id="menu1" type="button" data-toggle="dropdown" aria-haspopup="true" >Shop <span class="caret"></span></a>
+                        	<ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+                        		<li role="presentation"><a role="menuitem" tabindex="-1" href='man.html'>man</a></li>
+                            	<li role="presentation"><a role="menuitem" tabindex="-1" href='woman.html'>woman</a></li>
+                   			</ul>
+                    	</li>
+        				<li><a href='about.html'>About</a></li>
+        				<li><a href='contact.html'>Contact</a></li>
+      				</ul>
+    			</div>
+            </div>
+            <div class="col-md-4 hidden-sm hidden-xs ">
+            	<div class="search-box">  
+              		<form name="search_form" method="post" class="search_form">
+                    	<button type="submit" class="btn btn-default"><input id="search" type="text" /> &nbsp;
+                        <span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
+                        <button type="submit" class="btn btn-default">
+                        <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span></button>
+          			</form>
+         		</div>
+            </div>
+  		</div>
+	</nav><br>
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    	<!-- Indicators -->
+    	<ol class="carousel-indicators">
+      		<li data-target="#myCarousel" data-slide-to="0"></li>
+      		<li data-target="#myCarousel" data-slide-to="1"></li>
+      		<li data-target="#myCarousel" data-slide-to="2"></li>
+      		<li data-target="#myCarousel" data-slide-to="3"></li>
+    	</ol>
+    	<!-- Wrapper for slides -->
+		<div class="carousel-inner" role="listbox">
+      		<div class="item active">
+            	<a href="woman.html">
+        		<img src="img/sale.jpg" alt="shoes1" width="460" height="345">
+        		<div class="carousel-caption">
+          			<h3>Pharrell Williams x adidas Superstar “Artwork”</h3>
+          			<p> </p>
+        		</div>
+                </a>
+      		</div>
+      		<div class="item">
+            	<a href="woman.html">
+        		<img src="img/collection.jpg" alt="shoes2" width="460" height="345">
+        		<div class="carousel-caption">
+          			<h3>adidas Originals Superstar by Pharrell Williams "Supershell Sculpted" Collection</h3>
+          			<p> </p>
+        		</div>
+                </a>
+      		</div>
+      		<div class="item">
+            	<a href="man.html">
+        		<img src="img/city.jpg" alt="shoes3" width="460" height="345">
+        		<div class="carousel-caption">
+          			<h3>ADIDAS SUPERSTAR 80S CITY SERIES</h3>
+          			<p></p>
+        		</div>
+                </a>
+      		</div>
+      		<div class="item">
+            	<a href="man.html">
+        		<img src="img/EAST.jpg" alt="shoes4" width="460" height="345">
+        		<div class="carousel-caption">
+          			<h3>ADIDAS SUPERSTAR “EAST RIVER RIVALRY” PACK</h3>
+          			<p></p>
+        		</div>
+                </a>
+      		</div>
+    	</div>
+        
+    	<!-- Left and right controls -->
+    	<a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+      		<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      		<span class="sr-only">Previous</span>
+    	</a>
+    	<a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+      		<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      		<span class="sr-only">Next</span>
+    	</a>
+	</div> <br>
+    
+    
+    
+	<div class="container-fluid bg-1">
+    	<div class="container ">
+        	<div class='row'>
+            	<div class='col-md-3 col-sm-3 col-sm-offset-1 col-md-offset-1'>
+                	<h3><b>Main Menu</b></h3>
+                	<ul class='list-unstyled'>
+                    	<li><a href='index.html'> &nbsp;&nbsp;<b>HOME</b></a></li>
+                    	<li><a href='man.html'> &nbsp;&nbsp;<b>SHOP MAN</b></a></li>
+                    	<li><a href='woman.html'> &nbsp;&nbsp;<b>SHOP WOMAN</b></a></li>
+                        <li><a href='about.html'> &nbsp;&nbsp;<b>ABOUT</b></a></li>
+                    	<li><a href='contact.html'> &nbsp;&nbsp;<b>CONTACT</b></a></li>
+                	</ul>
+            	</div>
+            	<div class='col-md-3 col-sm-3'>
+                	<h3><b>term of pavmen</b></h3>
+                    <p> &nbsp;&nbsp; <img src="img/maestro.png" alt="maestro" width="70" height="50"> &nbsp;&nbsp;
+                    	<img src="img/MasterCard.png" alt="mastercard" width="70" height="50"> </p>
+                    <p> &nbsp;&nbsp; <img src="img/Paypal.png" alt="paypal" width="70" height="50"> &nbsp;&nbsp;
+                    	<img src="img/Visa.png" alt="visa" width="70" height="50"></p>
+            	</div>
+            	<div class='col-md-5 col-sm-5'>
+                	<h3><b>CONNECT WITH NICE KICKS</b></h3>
+                    <p> &nbsp;&nbsp; <img src="img/facebook.png" alt="facebook"  width="60" height="60"> &nbsp;&nbsp; 
+                    	<img src="img/instagram.png" alt="instagram" width="60" height="60"> &nbsp;&nbsp; 
+                        <img src="img/twitter.png" alt="twitter" width="60" height="60"> &nbsp;&nbsp; 
+                        <img src="img/google.png" alt="google" width="60" height="60"> 
+             		</p>
+            	</div>
+        	</div>
+        </div>
+    </div>
+	<footer class="container-fluid text-center">
+  		<p>Prince of Songkla University, Phuket Campus</p>
+	</footer>
+    
+    <script src="js/tests/unit/dropdown.js"></script>
+	<script src="js/dropdown.js"</script>
+</body>
+</html>

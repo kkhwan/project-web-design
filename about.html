@@ -1,0 +1,244 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<title>Shoes Shop adout</title>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+    <link href="http://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link href="http://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  	<link href="http://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    
+	<style>
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+    footer {
+      	background-color: #000000;
+      	padding: 10px;
+	}
+	.carousel-inner > .item > img,
+  	.carousel-inner > .item > a > img {
+      	width: 70%;
+      	margin: auto;
+  	}
+	.carousel-inner img {
+      	width: 100%; 
+      	margin: auto;
+      	min-height:200px;
+	}
+	.bg-1 { 
+    	background-color: #CCC;
+    	color: #000;
+	}
+	.bg-2{
+		background-color: #CC9;
+    	color: #000;
+	}
+	button,
+	html input[type="button"],
+	input[type="reset"],
+	input[type="submit"] {
+  		-webkit-appearance: button;
+  		cursor: pointer;
+	}
+	button[disabled],
+	html input[disabled] {
+  		cursor: default;
+	}
+	button::-moz-focus-inner,
+	input::-moz-focus-inner {
+  		padding: 0;
+  		border: 0;
+	}
+	input {
+  		line-height: normal;
+	}
+	input[type="checkbox"],
+	input[type="radio"] {
+  		box-sizing: border-box;
+  		padding: 0;
+	}
+	input[type="number"]::-webkit-inner-spin-button,
+	input[type="number"]::-webkit-outer-spin-button {
+  		height: auto;
+	}
+	input[type="search"] {
+  		-webkit-box-sizing: content-box;
+     	-moz-box-sizing: content-box;
+          	box-sizing: content-box;
+  		-webkit-appearance: textfield;
+	}
+	input[type="search"]::-webkit-search-cancel-button,
+	input[type="search"]::-webkit-search-decoration {
+  		-webkit-appearance: none;
+	}
+	.search-box {
+  		text-align: right;
+  		margin-top: 15px;
+  		position: relative;
+	}
+	.search-box input {
+  		margin-top: 0px;
+	}
+	.search-box input[type="submit"] {
+  		background-color: transparent;
+  		position: absolute;
+  		right: 0;
+  		top: 0;
+  		border: 0;
+  		content: '';
+  		color: transparent;
+  		background: url(../images/search-icon.png);
+  		background-position: center;
+  		background-repeat: no-repeat;
+	}
+	.search-box input#s {
+  		padding: 4px 10px 4px 10px;
+  		height: 34px;
+  		line-height: 34px;
+  		outline: 0;
+  		border: 1px solid #ddd;
+	}
+	@media (max-width: 600px) {
+    	.carousel-caption {
+      		display: none; 
+    	}
+	}
+  </style>
+</head>
+
+<body>
+	<nav class="navbar navbar-inverse">
+    	<div class="container-fluid">
+            <div class="col-md-3">
+            	<div class="navbar-header">
+        			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            			<span class="icon-bar"></span>
+                		<span class="icon-bar"></span>
+                		<span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+					</button>
+            		<a href='index.html'><img src="img/logo.png" alt="logo"></a> &nbsp; &nbsp;
+				</div>
+            </div>
+            <div class="col-md-5">
+            	<div class="collapse navbar-collapse" id="myNavbar">
+      				<ul class="nav navbar-nav">
+        				<li><a href="index.html">Home</a></li>
+                    	<li class="dropdown">
+                    		<a href="#" class="dropdown-toggle" id="menu1" type="button" data-toggle="dropdown" aria-haspopup="true" >Shop <span class="caret"></span></a>
+                        	<ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+                        		<li role="presentation"><a role="menuitem" tabindex="-1" href='man.html'>man</a></li>
+                            	<li role="presentation"><a role="menuitem" tabindex="-1" href='woman.html'>woman</a></li>
+                   			</ul>
+                    	</li>
+        				<li class="active"><a href='about.html'>About</a></li>
+        				<li><a href='contact.html'>Contact</a></li>
+      				</ul>
+    			</div>
+            </div>
+            <div class="col-md-4 hidden-sm hidden-xs ">
+            	<div class="search-box">  
+              		<form name="search_form" method="post" class="search_form">
+                    	<button type="submit" class="btn btn-default"><input id="search" type="text" /> &nbsp;<span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
+                        <button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span></button>
+          			</form>
+         		</div>
+            </div>
+  		</div>
+	</nav><br><br><br><br>
+    <div class="container bg-2 text-center">
+    <br>
+    	<h1><b>" ADIDAS SUPERSTAR "</b></h1> 
+        <h5><b>THE MOST ICONIC SNEAKER FROM THE BRAND WITH THREE STRIPES, THE ADIDAS SUPERSTAR HAS TRANSCENDED BEYOND THE SNEAKER GAME. ALSO KNOWN AS “SHELL-TOES,” ICONIC CELEBRITIES HAVE ROCKED THESE KICKS. NOTABLY RUN DMC, MISSY ELLIOT, AND EVEN IN THE VIRTUAL WORLD, CHARACTERS FROM THE GRAND THEFT AUTO SERIES. ON THE COURT, KAREEM ABDUL JABBAR WORE THESE ON THE COURT TO HELP PLANT THE GERMAN FOOTWEAR COMPANY IN THE U.S..</b></h5><br>
+    </div><br><br><br>
+
+	<div class="container text-center">
+  		<div class="row">
+    		<div class="col-sm-4">
+      			<img src="img/superstar-city.jpg" class="img-responsive" style="width:100%" alt="Image">
+    		</div>
+            <div class="col-sm-7 col-sm-offset-1">
+            	<h3><b>ADIDAS SUPERSTAR 80S CITY SERIES</b></h3>
+                <p>Continuing in a rich history of celebrating sporting locales and the greatest cities across the globe, adidas renews their time-honored city series with the Superstar 80s as the canvas for creation. Highlighting six cities across the globe, this vibrant offering blends tradition and modern styling with seamless ease.</p>
+                <p>The adidas Superstar 80s City Series pays tribute to Paris, London, New York, Berlin, Tokyo & Shanghai while taking tonal inspiration from 70’s and 80’s adidas training shoes. Each shoe breaks its monotone aesthetic with a gold landmark infusion embossed at the heel.</p>
+            </div>
+  		</div><br><br>
+        <div class="row">
+        	<div class="col-sm-7">
+            	<br><br>
+            	<h3><b>Pharrell x adidas Superstar “Supercolor” Collection</b></h3>
+            	<p>Having already tried his collaborative hand with the adidas Stan Smith, Pharrell has applied his creative prowess to the classic Superstar silhouette for a colorful 50-piece collection. Dubbed the “Supercolor”, Williams and the Trefoil brand take the iconic silhouette on a vibrant trip through the color wheel. Jam-packed with a surplus of diversity for all to enjoy, the Pharrell x adidas Superstar “Supercolor” Collection is all set to arrive at global adidas retailers on March 27th. Get familiar with the entire collection after the jump, and be sure to let us know which colors you are feeling the most in the comments section below.</p>
+            </div>
+        	<div class="col-sm-4 col-sm-offset-1"> 
+      			<img src="img/Supercolor8.jpg" class="img-responsive" style="width:100%" alt="Image">
+    		</div>
+        </div><br><br>
+        <div class="row">
+        	<div class="col-sm-4">
+      			<img src="img/EAST RIVER RIVALRY1.jpg" class="img-responsive" style="width:100%" alt="Image">
+    		</div>
+            <div class="col-sm-7 col-sm-offset-1">
+            	<h3><b>ADIDAS SUPERSTAR “EAST RIVER RIVALRY” PACK</b></h3>
+                <p>Although both the New York Knicks and Brooklyn Nets aren’t having the seasons they set out for when embarking on the NBA’s 2014-15 campaign, that doesn’t mean they haven’t pleased aesthetically in their mediocrity. Paying tribute to their team colors and crosstown dueling is the all-new adidas Superstar “East River Rivalry” Pack. Utilizing the Superstar exclusively, the pack highlights premium updates to the iconic model including gold detailing and snakeskin branding with further animal print at the heel. Four colorways don the collection consisting of white/blue/orange and black/white options, respectively. Give them a look below and stay tuned for release details.</p>
+            </div>
+        </div><br><br>
+        <div class="row">
+        	<div class="col-sm-7">
+            	<h3><b>PHARRELL PICKS TODD JAMES & MORE FOR ADIDAS SUPERSHELL “ARTWORK” COLLECTION</b></h3>
+                <p>By most measures, the Pharrell Williams x adidas Superstar “Supercolor” campaign was a success, bringing increased visibility to the Shelltoe model via tonal takes and smart seeding during its anniversary run. Today, we see the first official follow up to Skateboard P and The Three Stripe’s homage to the Superstar via the Supershell “Artwork” Collection.</p>
+                <p>Focusing on the actual Shelltoe as a canvas for collaboration as opposed to the more mundane leather paneling, Pharrell has enlisted the help of Todd James, Cass Bird and Mr. to enhance the style staple. In addition, the creative of many hats is dipping his brush in the paint by whipping up six different designs of his own.</p>
+                <p>Peep a preview of the Pharrell Williams x adidas Superstar “Artwork” Collection from the Supershell selected creatives. Scheduled to launch on August 7th at adidas Originals accounts worldwide, each region will receive select stylings to add exclusivity and chase to these mismatched makeups (that’s right, the left toe box designs differ from that of the right). Check out the video and photo previews below.</p>
+            </div>
+        	<div class="col-sm-4 col-sm-offset-1">
+            	<br><br><br><br><br>
+      			<img src="img/supershellpharrell.jpg" class="img-responsive" style="width:100%" alt="Image">
+    		</div>
+        </div>
+	</div><br><br>
+    
+	<div class="container-fluid bg-1">
+    	<div class="container ">
+        	<div class='row'>
+            	<div class='col-md-3 col-sm-3 col-sm-offset-1 col-md-offset-1'>
+                	<h3><b>Main Menu</b></h3>
+                	<ul class='list-unstyled'>
+                    	<li><a href='index.html'> &nbsp;&nbsp;<b>HOME</b></a></li>
+                    	<li><a href='man.html'> &nbsp;&nbsp;<b>SHOP MAN</b></a></li>
+                    	<li><a href='woman.html'> &nbsp;&nbsp;<b>SHOP WOMAN</b></a></li>
+                        <li><a href='about.html'> &nbsp;&nbsp;<b>ABOUT</b></a></li>
+                    	<li><a href='contact.html'> &nbsp;&nbsp;<b>CONTACT</b></a></li>
+                	</ul>
+            	</div>
+            	<div class='col-md-3 col-sm-3'>
+                	<h3><b>term of pavmen</b></h3>
+                    <p> &nbsp;&nbsp; <img src="img/maestro.png" alt="maestro" width="70" height="50"> &nbsp;&nbsp;
+                    	<img src="img/MasterCard.png" alt="mastercard" width="70" height="50"> </p>
+                    <p> &nbsp;&nbsp;<img src="img/Paypal.png" alt="paypal" width="70" height="50"> &nbsp;&nbsp;
+                    	<img src="img/Visa.png" alt="visa" width="70" height="50"></p>
+            	</div>
+            	<div class='col-md-5 col-sm-5'>
+                	<h3><b>CONNECT WITH NICE KICKS</b></h3>
+                    <p> &nbsp;&nbsp; <img src="img/facebook.png" alt="facebook"  width="60" height="60"> &nbsp;&nbsp; 
+                    	<img src="img/instagram.png" alt="instagram" width="60" height="60"> &nbsp;&nbsp; 
+                        <img src="img/twitter.png" alt="twitter" width="60" height="60"> &nbsp;&nbsp; 
+                        <img src="img/google.png" alt="google" width="60" height="60"> 
+             		</p>
+            	</div>
+        	</div>
+        </div>
+    </div>
+	<footer class="container-fluid text-center">
+  		<p>Prince of Songkla University, Phuket Campus</p>
+	</footer>
+    
+    <script src="js/tests/unit/dropdown.js"></script>
+	<script src="js/dropdown.js"</script>
+</body>
+</html>
